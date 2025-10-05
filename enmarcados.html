@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Imágenes únicas enmarcadas</title>
+  </head>
+  <body>
+    <header class="grid md:grid-cols-5 items-end p-2">
+      <div
+        class="flex h-full items-center justify-center md:col-span-1 md:col-start-1"
+      >
+        <img class="size-20 md:size-28" src="img/logo.png" alt="Logo" />
+      </div>
+
+      <nav class="text-sm lg:text-lg md:col-span-3 md:col-start-3">
+        <ul class="flex justify-around w-full p-2 text-gray-500">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="enmarcados.html">Enmarcados</a></li>
+          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="grid md:grid-cols-2">
+        <div class="grid p-10 justify-items-center h-170 bg-stone-400">
+          <img
+            class="flex h-110 rounded-sm"
+            src="img/personalizados.png"
+            alt="Personalizados"
+          />
+          <h3 class="grid text-2xl">Fotografías</h3>
+          <p class="p-4">
+            Editamos tus fotos y hacemos un diseño personalizado.
+          </p>
+        </div>
+
+        <div class="grid p-10 justify-items-center h-170">
+          <img
+            class="flex h-110 rounded-sm"
+            src="img/rompecabezas.jpg"
+            alt="Edicion"
+          />
+          <h3 class="flex justify-center text-xl pt-4">Rompecabezas</h3>
+          <p class="p-4">
+            Querés inmortalizar un rompecabezas con ese diseño que te encanta?
+            Nosotros te ayudamos.
+          </p>
+        </div>
+
+        <div class="grid p-10 justify-items-center h-170">
+          <img
+            class="flex h-110 rounded-sm"
+            src="img/obras.jpg"
+            alt="Instalacion"
+          />
+          <h3 class="flex justify-center text-2xl">Obras de arte</h3>
+          <p class="p-4">
+            Le damos a tus obras de arte el marco y la protección para que las
+            disfrutes para siempre.
+          </p>
+        </div>
+        <div class="grid gap-3 p-10 justify-items-center h-180 bg-stone-400">
+          <img
+            class="flex h-110 rounded-sm"
+            src="img/camisetas.jpg"
+            alt="Personalizados"
+          />
+          <h3 class="flex justify-center text-2xl">Camisetas</h3>
+          <p class="p-4">
+            Tenés esa camiseta especial, tal vez con la firma de tu ídolo. Las
+            enmarcamos para que la puedas exhibir como nunca antes.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

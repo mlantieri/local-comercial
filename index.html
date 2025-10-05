@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Imágenes únicas enmarcadas</title>
+  </head>
+  <body>
+    <header class="grid md:grid-cols-5 items-end p-2">
+      <div
+        class="flex h-full items-center justify-center md:col-span-1 md:col-start-1"
+      >
+        <img class="size-20 md:size-28" src="img/logo.png" alt="Logo" />
+      </div>
+
+      <nav class="text-sm lg:text-lg md:col-span-3 md:col-start-3">
+        <ul class="flex justify-around w-full p-2 text-gray-500">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="enmarcados.html">Enmarcados</a></li>
+          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="relative bg-amber-100">
+        <img src="img/inicio.jpg" alt="Imagen principal" />
+        <div class="flex flex-col absolute w-[40%] left-[8%] bottom-[15%] p-2">
+          <h1 class="text-md md:text-5xl font-display">
+            Marcos personalizados para tus recuerdos
+          </h1>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-10 p-15">
+        <div class="grid gap-3 h-110 bg-stone-400 rounded-sm">
+          <img
+            class="flex w-full size-50 justify-center items-center rounded-t-sm"
+            src="img/varillas.png"
+            alt="Marcos"
+          />
+          <h3 class="flex justify-center text-2xl">Varillas</h3>
+          <p class="p-4">
+            Parte de la magia está en la elección de las varillas. Te ayudamos
+            en la selección para los marcos de una amplia variedad de maderas.
+          </p>
+        </div>
+
+        <div class="grid gap-3 content-between h-110 bg-stone-400 rounded-sm">
+          <h3 class="flex justify-center text-xl pt-4">Diseño</h3>
+          <p class="p-4">
+            Editamos tus fotos y hacemos diseños personalizados para realzar tus
+            recuerdos.
+          </p>
+          <img
+            class="grid w-full size-50 rounded-b-sm"
+            src="img/personalizados.jpg"
+            alt="Edicion"
+          />
+        </div>
+
+        <div class="grid gap-3 h-110 bg-stone-400 rounded-sm">
+          <img
+            class="flex w-full size-50 justify-center items-center rounded-t-sm"
+            src="img/instalacion.jpg"
+            alt="Instalacion"
+          />
+          <h3 class="flex justify-center text-2xl">Instalacion</h3>
+          <p class="p-4">
+            Realizamos la planeación de la ubicación de tus cuadros en tu pared
+            y la instalación.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
