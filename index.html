@@ -3,77 +3,164 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="dist/output.css" rel="stylesheet" />
     <title>Imágenes únicas enmarcadas</title>
   </head>
-  <body>
-    <header class="grid md:grid-cols-5 items-end p-2">
-      <div
-        class="flex h-full items-center justify-center md:col-span-1 md:col-start-1"
-      >
-        <img class="size-20 md:size-28" src="img/logo.png" alt="Logo" />
-      </div>
 
-      <nav class="text-sm lg:text-lg md:col-span-3 md:col-start-3">
-        <ul class="flex justify-around w-full p-2 text-gray-500">
+  <body class="bg-silver">
+    <header class="grid md:grid-cols-5 items-end p-2 bg-silver">
+      <nav
+        class="text-sm order-2 lg:text-lg md:order-1 md:col-start-1 md:col-span-2"
+      >
+        <ul class="flex font-urbanist justify-around w-full p-2 text-white">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="enmarcados.html">Enmarcados</a></li>
           <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
+      <div
+        class="grid order-1 md:order-2 items-center justify-center md:col-span-1 md:col-start-3"
+      >
+        <img class="size-20 md:size-25" src="img/logo.png" alt="Logo" />
+      </div>
     </header>
     <main>
-      <div class="relative bg-amber-100">
-        <img src="img/inicio.jpg" alt="Imagen principal" />
-        <div class="flex flex-col absolute w-[40%] left-[8%] bottom-[15%] p-2">
-          <h1 class="text-md md:text-5xl font-display">
+      <div class="relative h-[100vh] md:h-[85vh] p-8 bg-silver">
+        <div class="grid pl-8 gap-6 md:w-[50vw]">
+          <h1
+            class="font-urbanist text-white font-medium text-3xl pt-4 md:text-5xl z-10"
+          >
             Marcos personalizados para tus recuerdos
           </h1>
+          <p
+            class="font-urbanist text-gray-50 font-light text-lg md:w-[35vw] md:text-2xl z-10"
+          >
+            Enmarcamos tus fotos, posters, cuadros y obras de arte con
+            materiales de primera calidad.
+          </p>
+          <a
+            class="mt-8 w-fit pt-2 pb-2 pl-4 pr-4 rounded-lg font-urbanist font-semibold text-white bg-red"
+            href="enmarcados.html"
+            >Explorar</a
+          >
         </div>
+        <img
+          class="absolute m-2 object-scale-down bottom-10 md:right-10 md:bottom-10 z-0"
+          src="img/wall.png"
+          alt="Wall"
+        />
       </div>
 
-      <div class="grid md:grid-cols-3 gap-10 p-15">
-        <div class="grid gap-3 h-110 bg-stone-400 rounded-sm">
+      <div class="grid md:grid-cols-3 gap-15 p-6 md:p-20 bg-stone-50">
+        <div class="grid justify-items-center content-start h-100">
           <img
-            class="flex w-full size-50 justify-center items-center rounded-t-sm"
+            class="grid inset-shadow-sm/50 p-4 border-4 border-gray-100 border-double bg-white"
             src="img/varillas.png"
             alt="Marcos"
           />
-          <h3 class="flex justify-center text-2xl">Varillas</h3>
-          <p class="p-4">
-            Parte de la magia está en la elección de las varillas. Te ayudamos
-            en la selección para los marcos de una amplia variedad de maderas.
-          </p>
+          <div class="grid content-start p-2">
+            <h3 class="flex font-urbanist justify-center text-3xl mt-5">
+              Varillas
+            </h3>
+            <p class="pl-6 pr-6 pt-4 font-urbanist text-justify justify-center">
+              Parte de la magia está en la elección de las varillas. Te ayudamos
+              en la selección para los marcos de una amplia variedad de maderas.
+            </p>
+          </div>
         </div>
 
-        <div class="grid gap-3 content-between h-110 bg-stone-400 rounded-sm">
-          <h3 class="flex justify-center text-xl pt-4">Diseño</h3>
-          <p class="p-4">
-            Editamos tus fotos y hacemos diseños personalizados para realzar tus
-            recuerdos.
-          </p>
+        <div class="grid justify-items-center content-start h-100">
           <img
-            class="grid w-full size-50 rounded-b-sm"
+            class="grid inset-shadow-sm/50 p-4 border-4 border-gray-100 border-double bg-white"
             src="img/personalizados.jpg"
             alt="Edicion"
           />
+          <div class="grid content-start p-2">
+            <h3 class="flex font-urbanist justify-center text-3xl mt-5">
+              Diseño
+            </h3>
+            <p class="pl-6 pr-6 pt-4 font-urbanist text-justify justify-center">
+              Editamos tus fotos y hacemos diseños personalizados para realzar
+              tus recuerdos.
+            </p>
+          </div>
         </div>
 
-        <div class="grid gap-3 h-110 bg-stone-400 rounded-sm">
+        <div class="grid justify-items-center content-start h-100">
           <img
-            class="flex w-full size-50 justify-center items-center rounded-t-sm"
-            src="img/instalacion.jpg"
+            class="grid inset-shadow-sm/50 p-4 border-4 border-gray-100 border-double bg-white"
+            src="img/inst.jpg"
             alt="Instalacion"
           />
-          <h3 class="flex justify-center text-2xl">Instalacion</h3>
-          <p class="p-4">
-            Realizamos la planeación de la ubicación de tus cuadros en tu pared
-            y la instalación.
+          <div class="grid content-start p-2">
+            <h3 class="flex font-urbanist justify-center text-3xl mt-5">
+              Instalación
+            </h3>
+            <p class="pl-6 pr-6 pt-4 font-urbanist text-justify justify-center">
+              Realizamos la planeación de la ubicación de tus cuadros en tu
+              pared y la instalación.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid relative items-center justify-items-center p-15">
+        <div class="grid absolute w-fit gap-2 m-10 p-4 bg-red rounded-sm">
+          <h2 class="flex font-urbanist text-white justify-center text-4xl">
+            ¿Sos artista?
+          </h2>
+          <p class="flex justify-center font-urbanist text-xl text-white">
+            Enmarcamos tus obras de arte.
+          </p>
+        </div>
+        <img
+          class="p-8 h-[80vh] shadow-xl/50 bg-white border-2 border-gray-100"
+          src="img/arte.png"
+          alt="Obras de arte enmarcadas"
+        />
+      </div>
+    </main>
+    <footer>
+      <div class="grid md:grid-cols-3 gap-4 p-8 text-black bg-stone-50">
+        <div class="grid justify-items-center">
+          <h3 class="font-urbanist text-xl w-full mb-4">
+            IMAGENES ÚNICAS ENMARCADAS
+          </h3>
+          <p class="font-urbanist w-full">
+            Teléfono: +54 9 11 1234 5678<br />
+            Email: imagenesunicasenmarcadas@gmail.com
+          </p>
+          <div class="grid w-full">
+            <ul class="flex gap-10 justify-start w-full pt-5 font-urbanist">
+              <a
+                href="https://www.facebook.com/profile.php?id=100067146395321"
+                target="_blank"
+                class="text-white hover:underline"
+                ><img class="size-8" src="img/facebook.png" alt="Facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/imagenesunicasenmarcadas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+              >
+                <img class="size-8" src="img/instagram.png" alt="Instagram"
+              /></a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid col-start-3 justify-items-end">
+          <h3 class="font-urbanist text-xl mb-4">Horarios de atención</h3>
+          <p class="font-urbanist text-end">
+            Lunes a Viernes: 9:00 AM - 6:00 PM<br />
+            Sábados: 10:00 AM - 4:00 PM<br />
+            Domingos: Cerrado
           </p>
         </div>
       </div>
-    </main>
-    <footer></footer>
+    </footer>
   </body>
 </html>
