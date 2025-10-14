@@ -12,15 +12,21 @@
   </head>
 
   <body class="bg-silver">
-    <header class="grid md:grid-cols-5 items-end p-2 bg-silver">
+    <header class="grid md:grid-cols-5 items-end p-2">
       <nav
-        class="text-sm order-2 lg:text-lg md:order-1 md:col-start-1 md:col-span-2"
+        class="text-md font-semibold order-2 pt-5 lg:text-lg md:order-1 md:col-start-1 md:col-span-2"
       >
         <ul class="flex font-urbanist justify-around w-full p-2 text-white">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="enmarcados.html">Enmarcados</a></li>
-          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li class="border-b-2 hover:text-red">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="hover:text-red">
+            <a href="enmarcados.html">Enmarcados</a>
+          </li>
+          <li class="hover:text-red">
+            <a href="sobre-nosotros.html">Nosotros</a>
+          </li>
+          <li class="hover:text-red"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
       <div
@@ -30,7 +36,7 @@
       </div>
     </header>
     <main>
-      <div class="relative h-[100vh] md:h-[85vh] p-8 bg-silver">
+      <div class="relative h-[100vh] md:h-[85vh] p-8">
         <div class="grid pl-8 gap-6 md:w-[50vw]">
           <h1
             class="font-urbanist text-white font-medium text-3xl pt-4 md:text-5xl z-10"
@@ -152,9 +158,9 @@
           </div>
         </div>
 
-        <div class="grid col-start-3 justify-items-end">
-          <h3 class="font-urbanist text-xl mb-4">Horarios de atención</h3>
-          <p class="font-urbanist text-end">
+        <div class="grid md:col-start-3 md:justify-items-end">
+          <h3 class="font-urbanist text-xl mb-2">Horarios de atención</h3>
+          <p class="font-urbanist text-sm md:text-end">
             Lunes a Viernes: 9:00 AM - 6:00 PM<br />
             Sábados: 10:00 AM - 4:00 PM<br />
             Domingos: Cerrado

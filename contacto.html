@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="dist/output.css" rel="stylesheet" />
+    <title>Imágenes únicas enmarcadas</title>
+  </head>
+  <body class="bg-silver">
+    <header class="grid md:grid-cols-5 items-end p-2">
+      <nav
+        class="text-md font-semibold order-2 pt-5 lg:text-lg md:order-1 md:col-start-1 md:col-span-2"
+      >
+        <ul class="flex font-urbanist justify-around w-full p-2 text-white">
+          <li class="hover:text-red">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="hover:text-red">
+            <a href="enmarcados.html">Enmarcados</a>
+          </li>
+          <li class="hover:text-red">
+            <a href="sobre-nosotros.html">Nosotros</a>
+          </li>
+          <li class="border-b-2 hover:text-red">
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="grid order-1 md:order-2 items-center justify-center md:col-span-1 md:col-start-3"
+      >
+        <img class="size-20 md:size-25" src="img/logo.png" alt="Logo" />
+      </div>
+    </header>
+    <main>
+      <div
+        class="relative justify-items-center content-end p-8 h-[90vh] md:justify-items-end md:content-center md:h-[85vh] bg-stone-50"
+      >
+        <img
+          class="absolute p-4 h-[50vh] object-contain top-8 md:h-[70vh] md:left-12 md:top-12 inset-shadow-sm/40 bg-white border-2 border-gray-100"
+          src="img/taller.jpg"
+          alt="Taller"
+        />
+        <div class="grid p-6 gap-6 md:w-[40vw] md:mr-28 bg-silver">
+          <h1 class="font-urbanist text-white font-medium text-3xl md:text-5xl">
+            Ubicación
+          </h1>
+          <p
+            class="font-urbanist text-gray-100 font-light text-lg md:w-[35vw] md:text-xl z-10"
+          >
+            Nos encontramos en el nivel 1, local 010 de la galería. Vení a
+            visitarnos!
+          </p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2">
+        <div class="justify-items-center p-10">
+          <h2 class="font-urbanist text-3xl md:text-4xl text-white">
+            Seguinos en redes!
+          </h2>
+          <div class="grid justify-items-center p-8">
+            <ul class="flex gap-10 justify-start w-full pt-5 font-urbanist">
+              <a
+                href="https://www.facebook.com/profile.php?id=100067146395321"
+                target="_blank"
+                class="text-white hover:underline"
+                ><img class="size-12" src="img/facebook.png" alt="Facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/imagenesunicasenmarcadas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+              >
+                <img class="size-12" src="img/instagram.png" alt="Instagram"
+              /></a>
+            </ul>
+          </div>
+        </div>
+        <div class="p-10">
+          <h2
+            class="font-urbanist text-3xl text-center md:text-start md:text-4xl text-white"
+          >
+            Contactános
+          </h2>
+          <p
+            class="font-urbanist text-gray-100 text-lg pt-2 text-center md:text-xl md:text-start"
+          >
+            Escribinos tus ideas y te asesoramos!
+          </p>
+          <form action="mailto:mlantieri@uade.edu.ar">
+            <div class="grid grid-cols-2 mt-8 font-urbanist">
+              <div class="grid gap-0.5 mr-8">
+                <label class="font-medium" for="nombre">Nombre:</label>
+                <input
+                  class="bg-white rounded-sm p-1 border-1 border-stone-400"
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre..."
+                /><br />
+              </div>
+              <div class="grid gap-0.5 mr-8">
+                <label class="font-medium" for="apellido">Apellido:</label>
+                <input
+                  class="bg-white rounded-sm p-1 border-1 border-stone-400"
+                  type="text"
+                  id="apellido"
+                  name="apellido"
+                  placeholder="Tu apellido..."
+                /><br />
+              </div>
+              <div class="grid col-span-2 gap-0.5 mr-8">
+                <label class="font-medium" for="apellido"
+                  >Correo electrónico:</label
+                >
+                <input
+                  class="bg-white rounded-sm p-1 border-1 border-stone-400"
+                  type="text"
+                  id="Correo"
+                  name="Correo"
+                  placeholder="direccion@ejemplo.com..."
+                /><br />
+              </div>
+              <div class="grid col-span-2 gap-0.5 mr-8">
+                <label class="font-medium" for="apellido"
+                  >Qué necesitas enmarcar?</label
+                >
+                <input
+                  class="bg-white rounded-sm p-1 pb-20 border-1 border-stone-400"
+                  type="text"
+                  id="Correo"
+                  name="Correo"
+                  placeholder="Escribinos tus ideas, dudas o preguntas..."
+                /><br />
+              </div>
+              <div>
+                <input
+                  class="bg-red rounded-sm p-1 pl-4 pr-4 text-white font-medium"
+                  type="submit"
+                  value="Enviar"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="grid md:grid-cols-3 gap-4 p-8 text-black bg-stone-50">
+        <div class="grid justify-items-center">
+          <h3 class="font-urbanist text-xl w-full mb-4">
+            IMAGENES ÚNICAS ENMARCADAS
+          </h3>
+          <p class="font-urbanist w-full">
+            Teléfono: +54 9 11 1234 5678<br />
+            Email: imagenesunicasenmarcadas@gmail.com
+          </p>
+          <div class="grid w-full">
+            <ul class="flex gap-10 justify-start w-full pt-5 font-urbanist">
+              <a
+                href="https://www.facebook.com/profile.php?id=100067146395321"
+                target="_blank"
+                class="text-white hover:underline"
+                ><img class="size-8" src="img/facebook.png" alt="Facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/imagenesunicasenmarcadas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+              >
+                <img class="size-8" src="img/instagram.png" alt="Instagram"
+              /></a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid md:col-start-3 md:justify-items-end">
+          <h3 class="font-urbanist text-xl mb-2">Horarios de atención</h3>
+          <p class="font-urbanist text-sm md:text-end">
+            Lunes a Viernes: 9:00 AM - 6:00 PM<br />
+            Sábados: 10:00 AM - 4:00 PM<br />
+            Domingos: Cerrado
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

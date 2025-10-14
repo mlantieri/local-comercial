@@ -3,79 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="dist/output.css" rel="stylesheet" />
     <title>Imágenes únicas enmarcadas</title>
   </head>
-  <body>
+  <body class="bg-silver">
     <header class="grid md:grid-cols-5 items-end p-2">
-      <div
-        class="flex h-full items-center justify-center md:col-span-1 md:col-start-1"
+      <nav
+        class="text-md font-semibold order-2 pt-5 lg:text-lg md:order-1 md:col-start-1 md:col-span-2"
       >
-        <img class="size-20 md:size-28" src="img/logo.png" alt="Logo" />
-      </div>
-
-      <nav class="text-sm lg:text-lg md:col-span-3 md:col-start-3">
-        <ul class="flex justify-around w-full p-2 text-gray-500">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="enmarcados.html">Enmarcados</a></li>
-          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+        <ul class="flex font-urbanist justify-around w-full p-2 text-white">
+          <li class="hover:text-red">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="border-b-2 hover:text-red">
+            <a href="enmarcados.html">Enmarcados</a>
+          </li>
+          <li class="hover:text-red">
+            <a href="sobre-nosotros.html">Nosotros</a>
+          </li>
+          <li class="hover:text-red"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
+      <div
+        class="grid order-1 md:order-2 items-center justify-center md:col-span-1 md:col-start-3"
+      >
+        <img class="size-20 md:size-25" src="img/logo.png" alt="Logo" />
+      </div>
     </header>
     <main>
       <div class="grid md:grid-cols-2">
-        <div class="grid p-10 justify-items-center h-170 bg-stone-400">
+        <div
+          class="grid relative p-10 md:pl-20 justify-items-start h-[90vh] bg-stone-50"
+        >
           <img
-            class="flex h-110 rounded-sm"
+            class="h-130 inset-shadow-sm/80 p-0 border-4 border-gray-100 border-double bg-white"
             src="img/personalizados.png"
             alt="Personalizados"
           />
-          <h3 class="grid text-2xl">Fotografías</h3>
-          <p class="p-4">
-            Editamos tus fotos y hacemos un diseño personalizado.
-          </p>
+          <div
+            class="grid absolute justify-items-center p-2 top-40 left-30 w-[60vw] md:left-70 md:w-[24vw] bg-red rounded-sm"
+          >
+            <h3 class="font-urbanist text-2xl font-medium text-white">
+              Fotografías
+            </h3>
+            <p class="font-urbanist text-white p-2">
+              Editamos tus fotos y hacemos un diseño personalizado.
+            </p>
+          </div>
         </div>
 
-        <div class="grid p-10 justify-items-center h-170">
+        <div class="grid relative p-10 md:pr-20 justify-items-end h-[90vh]">
           <img
-            class="flex h-110 rounded-sm"
+            class="p-6 h-130 shadow-xl/50 bg-white border-2 border-gray-100"
             src="img/rompecabezas.jpg"
             alt="Edicion"
           />
-          <h3 class="flex justify-center text-xl pt-4">Rompecabezas</h3>
-          <p class="p-4">
-            Querés inmortalizar un rompecabezas con ese diseño que te encanta?
-            Nosotros te ayudamos.
-          </p>
+          <div
+            class="grid absolute justify-items-center p-2 top-80 right-30 w-[65vw] md:right-70 md:w-[24vw] bg-red rounded-sm"
+          >
+            <h3 class="font-urbanist text-2xl font-medium text-white">
+              Rompecabezas
+            </h3>
+            <p class="font-urbanist text-white p-2">
+              Querés inmortalizar un rompecabezas con ese diseño que te encanta?
+              Nosotros te ayudamos.
+            </p>
+          </div>
         </div>
 
-        <div class="grid p-10 justify-items-center h-170">
+        <div class="grid relative p-10 md:pr-20 justify-items-end h-[90vh]">
           <img
-            class="flex h-110 rounded-sm"
+            class="p-6 h-130 shadow-xl/50 bg-white border-2 border-gray-100"
             src="img/obras.jpg"
             alt="Instalacion"
           />
-          <h3 class="flex justify-center text-2xl">Obras de arte</h3>
-          <p class="p-4">
-            Le damos a tus obras de arte el marco y la protección para que las
-            disfrutes para siempre.
-          </p>
+          <div
+            class="grid absolute justify-items-center p-2 top-80 right-30 w-[65vw] md:right-70 md:w-[24vw] bg-red rounded-sm"
+          >
+            <h3 class="font-urbanist text-2xl font-medium text-white">
+              Obras de arte
+            </h3>
+            <p class="font-urbanist text-white p-2">
+              Le damos a tus obras de arte el marco y la protección para que las
+              disfrutes para siempre.
+            </p>
+          </div>
         </div>
-        <div class="grid gap-3 p-10 justify-items-center h-180 bg-stone-400">
+        <div
+          class="grid relative p-10 md:pl-20 justify-items-start h-[90vh] bg-stone-50"
+        >
           <img
-            class="flex h-110 rounded-sm"
+            class="h-130 inset-shadow-sm/80 p-0 border-4 border-gray-100 border-double bg-white"
             src="img/camisetas.jpg"
             alt="Personalizados"
           />
-          <h3 class="flex justify-center text-2xl">Camisetas</h3>
-          <p class="p-4">
-            Tenés esa camiseta especial, tal vez con la firma de tu ídolo. Las
-            enmarcamos para que la puedas exhibir como nunca antes.
-          </p>
+          <div
+            class="grid absolute justify-items-center p-2 top-40 left-30 w-[65vw] md:left-70 md:w-[24vw] bg-red rounded-sm"
+          >
+            <h3 class="font-urbanist text-2xl font-medium text-white">
+              Camisetas
+            </h3>
+            <p class="font-urbanist text-white p-2">
+              Tenés esa camiseta especial, tal vez con la firma de tu ídolo. Las
+              enmarcamos para que la puedas exhibir como nunca antes.
+            </p>
+          </div>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="grid md:grid-cols-3 gap-4 p-8 text-black bg-stone-50">
+        <div class="grid justify-items-center">
+          <h3 class="font-urbanist text-xl w-full mb-4">
+            IMAGENES ÚNICAS ENMARCADAS
+          </h3>
+          <p class="font-urbanist w-full">
+            Teléfono: +54 9 11 1234 5678<br />
+            Email: imagenesunicasenmarcadas@gmail.com
+          </p>
+          <div class="grid w-full">
+            <ul class="flex gap-10 justify-start w-full pt-5 font-urbanist">
+              <a
+                href="https://www.facebook.com/profile.php?id=100067146395321"
+                target="_blank"
+                class="text-white hover:underline"
+                ><img class="size-8" src="img/facebook.png" alt="Facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/imagenesunicasenmarcadas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+              >
+                <img class="size-8" src="img/instagram.png" alt="Instagram"
+              /></a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid md:col-start-3 md:justify-items-end">
+          <h3 class="font-urbanist text-xl mb-2">Horarios de atención</h3>
+          <p class="font-urbanist text-sm md:text-end">
+            Lunes a Viernes: 9:00 AM - 6:00 PM<br />
+            Sábados: 10:00 AM - 4:00 PM<br />
+            Domingos: Cerrado
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
